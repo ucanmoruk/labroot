@@ -17,7 +17,7 @@ Root Kozmetik için hazırlanmış, blog gerektirmeyen kurumsal web sitesi.
 
 - Tailwind CSS CDN üzerinden tüm sayfalara eklenmiştir.
 - Özel marka bileşenleri ve layout düzeni `styles.css` içinde tutulur.
-- Genel görünüm açık gri arka plan, beyaz kartlar ve mavi CTA/buton sistemi üzerine kuruludur.
+- Genel görünüm Apple tarzı minimal estetikle, `#F8F9FA` kırık beyaz arka plan, `#1A1A1A` koyu gri metin, Inter font ve hafif gölgeli mavi CTA/buton sistemi üzerine kuruludur.
 
 ## Kolay düzenleme
 
