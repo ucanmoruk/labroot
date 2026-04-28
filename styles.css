@@ -170,6 +170,18 @@ svg {
   color: var(--white);
 }
 
+.subpage-hero {
+  min-height: 620px;
+}
+
+.subpage-hero h1 {
+  max-width: 980px;
+}
+
+.subpage-hero .hero-lead {
+  max-width: 760px;
+}
+
 .hero::before,
 .hero::after {
   content: "";
@@ -449,7 +461,10 @@ h3 {
 .market-cards article,
 .test-list article,
 .timeline article,
-.contact-form {
+.contact-form,
+.detail-block,
+.process-panel,
+.service-summary {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--white);
@@ -491,6 +506,35 @@ h3 {
 
 .test-list article {
   padding: 22px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.detail-block {
+  padding: 30px;
+}
+
+.detail-block ul,
+.process-panel ul,
+.service-summary ul {
+  display: grid;
+  gap: 10px;
+  padding-left: 20px;
+  margin: 18px 0 0;
+  color: var(--muted);
+}
+
+.process-panel,
+.service-summary {
+  padding: 30px;
+}
+
+.service-summary {
+  margin-top: 18px;
 }
 
 .timeline {
@@ -716,7 +760,8 @@ textarea {
   .split,
   .market-grid,
   .faq-grid,
-  .contact-grid {
+  .contact-grid,
+  .detail-grid {
     grid-template-columns: 1fr;
   }
 
