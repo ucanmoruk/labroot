@@ -13,10 +13,16 @@ Root Kozmetik için hazırlanmış, blog gerektirmeyen kurumsal web sitesi.
 - `script.js`: Mobil menü ve header kaydırma davranışı.
 - `assets/`: Root Kozmetik logosu, favicon ve TTNormsPro font dosyaları.
 
+## Tasarım altyapısı
+
+- Tailwind CSS CDN üzerinden tüm sayfalara eklenmiştir.
+- Özel marka bileşenleri ve layout düzeni `styles.css` içinde tutulur.
+- Genel görünüm açık gri arka plan, beyaz kartlar ve mavi CTA/buton sistemi üzerine kuruludur.
+
 ## Kolay düzenleme
 
 - Firma e-postasını değiştirmek için proje genelinde `info@rootkozmetik.com` araması yapın.
-- Ana renkleri değiştirmek için `styles.css` başındaki `:root` değişkenlerini güncelleyin. Mevcut renkler rootkozmetik.com marka paletinden alınmıştır.
+- Ana renkleri değiştirmek için `styles.css` başındaki `:root` değişkenlerini güncelleyin.
 - Logo değiştirmek için `assets/root-logo-dark.svg` ve `assets/root-logo-light.svg` dosyalarını güncelleyin.
 - Yeni hizmet veya test eklemek için `hizmetler/index.html` veya `testler/index.html` içindeki kartlardan birini kopyalayın.
 - LinkedIn adresini değiştirmek için `https://www.linkedin.com/` bağlantılarını kendi sayfanızla değiştirin.

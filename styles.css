@@ -23,16 +23,16 @@
 }
 
 :root {
-  --ink: #242022;
-  --muted: #5d6c7b;
-  --brand: #0049ff;
-  --brand-2: #2f6bff;
-  --accent: #dfdad5;
-  --cream: #dfdad5;
-  --soft: #f8f8f8;
+  --ink: #111827;
+  --muted: #64748b;
+  --brand: #2563eb;
+  --brand-2: #60a5fa;
+  --accent: #bfdbfe;
+  --cream: #e5e7eb;
+  --soft: #f3f4f6;
   --white: #ffffff;
-  --line: rgba(36, 32, 34, 0.14);
-  --shadow: 0 24px 70px rgba(36, 32, 34, 0.12);
+  --line: rgba(15, 23, 42, 0.1);
+  --shadow: 0 24px 70px rgba(15, 23, 42, 0.1);
   --radius: 24px;
   --max: 1180px;
 }
@@ -49,7 +49,9 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: "TTNormsPro", Arial, sans-serif;
-  background: var(--white);
+  background:
+    radial-gradient(circle at 12% -10%, rgba(37, 99, 235, 0.08), transparent 28rem),
+    #f3f4f6;
   line-height: 1.6;
 }
 
@@ -86,8 +88,8 @@ svg {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 18px max(20px, calc((100vw - var(--max)) / 2));
-  background: rgba(255, 255, 255, 0.9);
+  padding: 16px max(20px, calc((100vw - var(--max)) / 2));
+  background: rgba(255, 255, 255, 0.84);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
@@ -137,7 +139,8 @@ svg {
   color: var(--white) !important;
   padding: 10px 16px;
   border-radius: 999px;
-  background: var(--brand);
+  background: linear-gradient(135deg, var(--brand), #1d4ed8);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.24);
 }
 
 .nav-toggle {
@@ -164,9 +167,8 @@ svg {
   display: grid;
   align-items: center;
   background:
-    linear-gradient(120deg, rgba(13, 59, 62, 0.94), rgba(13, 59, 62, 0.78)),
-    radial-gradient(circle at 78% 16%, rgba(207, 174, 107, 0.45), transparent 28rem),
-    var(--brand);
+    radial-gradient(circle at 78% 12%, rgba(96, 165, 250, 0.34), transparent 26rem),
+    linear-gradient(135deg, #0f172a 0%, #1d4ed8 58%, #2563eb 100%);
   color: var(--white);
 }
 
@@ -215,7 +217,7 @@ svg {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--accent);
+  color: #bfdbfe;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -273,8 +275,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 13px 20px;
+  min-height: 50px;
+  padding: 13px 22px;
   border: 0;
   border-radius: 999px;
   cursor: pointer;
@@ -291,18 +293,19 @@ h3 {
 
 .btn-primary {
   color: var(--white);
-  background: linear-gradient(135deg, var(--brand-2), var(--brand));
-  box-shadow: 0 16px 34px rgba(13, 59, 62, 0.25);
+  background: linear-gradient(135deg, var(--brand), #1d4ed8);
+  box-shadow: 0 16px 34px rgba(37, 99, 235, 0.26);
 }
 
 .hero .btn-primary {
-  color: var(--brand);
-  background: var(--white);
+  color: var(--white);
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
 }
 
 .btn-secondary {
-  color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--brand);
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .trust-row span {
@@ -318,8 +321,8 @@ h3 {
   padding: 28px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 34px;
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.22);
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.25);
   backdrop-filter: blur(20px);
 }
 
@@ -386,7 +389,7 @@ h3 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #93c5fd;
 }
 
 .mini-alert {
@@ -401,8 +404,9 @@ h3 {
 
 .metrics {
   padding: 28px 0;
-  background: var(--cream);
+  background: rgba(255, 255, 255, 0.72);
   border-block: 1px solid var(--line);
+  backdrop-filter: blur(12px);
 }
 
 .metrics-grid {
@@ -428,7 +432,7 @@ h3 {
 
 .quick-route {
   padding: 34px 0 0;
-  background: var(--white);
+  background: transparent;
 }
 
 .quick-route-grid {
@@ -446,9 +450,9 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 22px;
   background:
-    linear-gradient(145deg, rgba(0, 73, 255, 0.06), rgba(255, 255, 255, 0)),
+    linear-gradient(145deg, rgba(37, 99, 235, 0.08), rgba(255, 255, 255, 0)),
     var(--white);
-  box-shadow: 0 14px 34px rgba(36, 32, 34, 0.06);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -457,8 +461,8 @@ h3 {
 
 .route-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(0, 73, 255, 0.24);
-  box-shadow: 0 22px 48px rgba(36, 32, 34, 0.1);
+  border-color: rgba(37, 99, 235, 0.28);
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.1);
 }
 
 .route-card strong {
@@ -522,7 +526,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--white);
-  box-shadow: 0 12px 40px rgba(13, 59, 62, 0.06);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.06);
 }
 
 .card {
@@ -538,7 +542,7 @@ h3 {
   margin-bottom: 28px;
   color: var(--brand);
   border-radius: 18px;
-  background: var(--soft);
+  background: #eff6ff;
   font-weight: 900;
 }
 
@@ -610,15 +614,15 @@ h3 {
   margin-bottom: 32px;
   color: var(--white);
   border-radius: 50%;
-  background: var(--brand);
+  background: linear-gradient(135deg, var(--brand), #1d4ed8);
   font-weight: 900;
 }
 
 .market-section {
   color: var(--white);
   background:
-    linear-gradient(135deg, rgba(13, 59, 62, 0.96), rgba(23, 109, 104, 0.9)),
-    var(--brand);
+    radial-gradient(circle at 80% 10%, rgba(147, 197, 253, 0.26), transparent 24rem),
+    linear-gradient(135deg, #0f172a, #1e3a8a 58%, #2563eb);
 }
 
 .market-section p {
@@ -688,8 +692,8 @@ details p {
 
 .contact-section {
   background:
-    radial-gradient(circle at 20% 20%, rgba(207, 174, 107, 0.14), transparent 24rem),
-    #fbfaf7;
+    radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.1), transparent 24rem),
+    #eef2ff;
 }
 
 .contact-points {
@@ -732,7 +736,7 @@ textarea {
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: #fbfcfb;
+  background: #f8fafc;
   font: inherit;
 }
 
@@ -748,7 +752,7 @@ textarea {
 .site-footer {
   padding: 54px 0 28px;
   color: rgba(255, 255, 255, 0.78);
-  background: #071f21;
+  background: #0f172a;
 }
 
 .footer-grid {
