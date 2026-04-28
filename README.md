@@ -7,13 +7,15 @@ Root Kozmetik için hazırlanmış, blog gerektirmeyen kurumsal web sitesi.
 - `index.html`: Ana sayfa içerikleri, meta etiketleri, JSON-LD şema verileri ve form alanları.
 - `hizmetler.html`: Regülasyon, dosya ve pazar erişimi hizmetlerinin detay sayfası.
 - `testler.html`: Kozmetik laboratuvar testlerinin detay sayfası.
+- `hakkimizda.html`: Root Kozmetik yaklaşımı, çalışma prensipleri ve kurumsal konumlandırma sayfası.
+- `iletisim.html`: Teklif ve ön değerlendirme için iletişim sayfası.
 - `styles.css`: Tüm tasarım, renkler, grid yapısı ve mobil görünüm.
 - `script.js`: Mobil menü ve header kaydırma davranışı.
 - `assets/`: Root Kozmetik logosu, favicon ve TTNormsPro font dosyaları.
 
 ## Kolay düzenleme
 
-- Firma e-postasını değiştirmek için `index.html` içinde `info@rootkozmetik.com` araması yapın.
+- Firma e-postasını değiştirmek için proje genelinde `info@rootkozmetik.com` araması yapın.
 - Ana renkleri değiştirmek için `styles.css` başındaki `:root` değişkenlerini güncelleyin. Mevcut renkler rootkozmetik.com marka paletinden alınmıştır.
 - Logo değiştirmek için `assets/root-logo-dark.svg` ve `assets/root-logo-light.svg` dosyalarını güncelleyin.
 - Yeni hizmet veya test eklemek için `hizmetler.html` veya `testler.html` içindeki kartlardan birini kopyalayın.
